@@ -1,0 +1,6 @@
+.logo__thumb {
+  height: 100%;
+  @media screen and(max-width:480px) {
+    padding: 16px 0;
+  }
+}

@@ -1,0 +1,54 @@
+/*постоянные клиенты*/
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.client__icon {
+  fill: currentColor;
+}
+
+.client {
+  display: flex;
+  @media screen and(max-width: 480px) {
+    flex-wrap: wrap;
+    width: 480px;
+  }
+}
+@media screen and(miv-width: 1200px) {
+  .client__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.client__item {
+  @media screen and(max-width: 480px) {
+    width: calc((100% / 2)-30px);
+
+    &:nth-child(2n + 1) {
+      margin-right: 15px;
+    }
+    &:nth-child(2n) {
+      margin-left: 15px;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 15px;
+    }
+    &:nth-child(-n + 4) {
+      margin-bottom: 15px;
+    }
+  }
+}

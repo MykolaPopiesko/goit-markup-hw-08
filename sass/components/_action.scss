@@ -1,0 +1,35 @@
+/* чем мы занимаемся-илюстрации*/
+.section__title--mobile {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+.action {
+  display: flex;
+  @media screen and(max-width:480px) {
+    display: none;
+  }
+}
+
+.action__item {
+  position: relative;
+  display: block;
+  width: calc((100% / 3)-60px);
+}
+.action__item:not(:last-child) {
+  margin-right: 30px;
+}
+.action__subject {
+  position: absolute;
+
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: var(--background-main-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  transform: translateY(-100%);
+}
