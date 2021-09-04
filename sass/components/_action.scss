@@ -1,12 +1,12 @@
 /* чем мы занимаемся-илюстрации*/
 .section__title--mobile {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
 .action {
   display: flex;
-  @media screen and(max-width:480px) {
+  @media screen and(max-width:1199px) {
     display: none;
   }
 }

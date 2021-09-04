@@ -24,31 +24,19 @@
 
 .client {
   display: flex;
-  @media screen and(max-width: 480px) {
-    flex-wrap: wrap;
-    width: 480px;
-  }
-}
-@media screen and(miv-width: 1200px) {
-  .client__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
 }
 .client__item {
-  @media screen and(max-width: 480px) {
-    width: calc((100% / 2)-30px);
+  margin: 15px;
+  flex-basis: calc((100% / 2)-60px);
 
-    &:nth-child(2n + 1) {
-      margin-right: 15px;
-    }
-    &:nth-child(2n) {
-      margin-left: 15px;
-    }
-    &:nth-child(n + 3) {
-      margin-top: 15px;
-    }
-    &:nth-child(-n + 4) {
-      margin-bottom: 15px;
-    }
+  @media screen and(min-width: 768px) {
+    flex-basis: calc((100% / 3)-90px);
+  }
+
+  @media screen and(min-width: 1200px) {
+    flex-basis: calc((100% / 6)-180px);
   }
 }
