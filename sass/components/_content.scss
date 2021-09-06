@@ -7,8 +7,8 @@
   background-color: $background-main-color;
 }
 .content__item {
+  margin: 15px;
   @media screen and(min-width:768px) {
-    margin: 15px;
     flex-basis: calc((100% / 2) - 30px);
   }
   @media screen and(min-width:1200px) {

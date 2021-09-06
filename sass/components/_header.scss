@@ -2,12 +2,11 @@
   width: 100%;
   height: 60px;
   display: flex;
-
   background-color: $background-main-color;
-
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
+
   @media screen and(min-width:768px) {
     height: 80px;
   }
@@ -64,7 +63,7 @@
 }
 .nav__link--current::after {
   position: absolute;
-  bottom: -1px;
+  bottom: 1px;
   display: block;
   width: 100%;
   height: 4px;
