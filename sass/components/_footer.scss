@@ -112,6 +112,10 @@
     display: flex;
     flex-direction: column;
   }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .footer__form {
   @media screen and(max-width:1199px) {

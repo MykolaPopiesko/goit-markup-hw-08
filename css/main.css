@@ -1666,6 +1666,18 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__form-legend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer__form {
     display: -webkit-box;
