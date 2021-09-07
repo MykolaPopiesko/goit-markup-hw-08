@@ -68,12 +68,14 @@
 }
 .contacts {
   display: flex;
+  flex-grow: 1;
   @media screen and(max-width: 767px) {
     flex-direction: column;
   }
   @media screen and(min-width: 768px) {
     align-items: center;
-    margin-left: 84px;
+
+    margin-left: 80px;
   }
   @media screen and(min-width: 1200px) {
     margin-left: 300px;
