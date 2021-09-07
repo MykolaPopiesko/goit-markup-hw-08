@@ -7,34 +7,34 @@
 
   background-color: $background-second-color;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/herom-img.jpg');
+    url('./images/herom-img.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/herom-img@2x.jpg');
+      url('./images/herom-img@2x.jpg');
   }
 
   @media screen and(min-width:768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/herot-img.jpg');
+      url('./images/herot-img.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/herot-img@2x.jpg');
+        url('./images/herot-img@2x.jpg');
     }
   }
   @media screen and(min-width:1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/herod-img.jpg');
+      url('./images/herod-img.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/herod-img@2x.jpg');
+        url('./images/herod-img@2x.jpg');
     }
   }
 }

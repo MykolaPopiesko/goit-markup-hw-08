@@ -282,9 +282,28 @@
                      </h2>
                 <ul class="group">
                     <li class="group__item">
-                        <img srcset="./images/Igor-Demianenko-m.jpg 450w, ./images/Igor-Demianenko-m@2x.jpg 900w"
-                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" 
-                            src="./images/Igor-Demianenko-m.jpg"
+                        <!-- <picture> -->
+                            <!-- <source srcset="/images/Igor-Demianenko-d.jpg 1x, -->
+                                            <!-- /images/Igor-Demianenko-d@2x.jpg 2x -->
+                                           <!-- " media="(min-width:1200px)" /> -->
+                            <!-- <source srcset="/images/Igor-Demianenko-t.jpg 1x, -->
+                                            <!-- /images/Igor-Demianenko-t@2x.jpg @2x                               -->
+                                           <!-- " media="(min-width:768px)" /> -->
+                            <!-- <source srcset="/images/Igor-Demianenko-m.jpg 1x, -->
+                                            <!-- /images/Igor-Demianenko-m@2x.jpg 2x -->
+                                           <!-- " media="(max-width:767px)" /> -->
+                                  <!-- <img src="/images/Igor-Demianenko-d.jpg" -->
+                                       <!-- alt="Игорь" width="270" height="260"> -->
+                        <!-- </picture> -->
+                        <img srcset="./images/Igor-Demianenko-m.jpg 450w,
+                                     ./images/Igor-Demianenko-m@2x.jpg 900w,
+                                     ./images/Igor-Demianenko-t.jpg 354w,
+                                     ./images/Igor-Demianenko-t@2x.jpg 708w,
+                                     ./images/Igor-Demianenko-d.jpg 270w,
+                                     ./images/Igor-Demianenko-d@2x 810w"
+                            sizes="(min-width: 1200px) 25vw,
+                                   (min-width: 768px) 50vw, 100vw" 
+                            src="./images/Igor-Demianenko-d.jpg"
                             alt=" Игорь Демьяненко" 
                         />
                        <div class="group__box">
@@ -343,7 +362,8 @@
                     </li>
                     <li class="group__item">
                     
-                        <img srcset="./images/Olga-Repina-m.jpg 450w, ./images/Olga-Repina-m@2x.jpg 900w"
+                        <img srcset="./images/Olga-Repina-m.jpg 450w,
+                                     ./images/Olga-Repina-m@2x.jpg 900w"
                             sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" 
                             src="./images/Olga-Repina-m.jpg"
                             alt=" Ольга Репина" />
