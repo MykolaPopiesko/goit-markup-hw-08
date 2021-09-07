@@ -419,10 +419,6 @@ a {
   }
 }
 
-.section--paddingtop {
-  padding-top: 0;
-}
-
 .section--bgcolor {
   background-color: #f5f4fa;
 }
@@ -480,6 +476,7 @@ a {
   .nav__logo {
     margin-right: auto;
     margin-left: 0;
+    margin-right: 88px;
   }
 }
 
@@ -679,6 +676,7 @@ a {
     width: 100vw;
     height: 100vh;
     overflow-y: scroll;
+    z-index: 999;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -858,32 +856,38 @@ a {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/herom-img.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/herom-img.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/herom-img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/herom-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/herom-img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/herom-img.jpg");
+  }
+}
+
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/herom-img@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/herom-img@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("images/herom-img@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("images/herom-img@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    min-width: 768px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/herot-img.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/herot-img.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/herot-img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/herot-img.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/herot-img@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/herot-img@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/herot-img@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/herot-img@2x.jpg");
   }
 }
 
@@ -891,15 +895,15 @@ a {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/herod-img.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/herod-img.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/herod-img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/herod-img.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/herod-img@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/herod-img@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/herod-img@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/herod-img@2x.jpg");
   }
 }
 
@@ -965,6 +969,7 @@ a {
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
+  z-index: 999;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1240,22 +1245,26 @@ a {
 }
 
 /* секция-текст */
-.content {
-  margin: -15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-color: #ffffff;
+@media screen and (min-width: 768px) {
+  .content {
+    margin: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
-.content__item {
-  margin: 15px;
+@media screen and (max-width: 76px) {
+  .content__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .content__item {
+    margin: 15px;
     -ms-flex-preferred-size: calc((100% / 2) - 30px);
         flex-basis: calc((100% / 2) - 30px);
   }
@@ -1307,6 +1316,16 @@ a {
 }
 
 /* чем мы занимаемся-илюстрации*/
+.section--paddingtop {
+  padding-top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .section--paddingtop {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .section__title--mobile {
     display: none;
@@ -1317,12 +1336,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (max-width: 1199px) {
-  .action {
-    display: none;
-  }
 }
 
 .action__item {
@@ -1343,7 +1356,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
-  color: var(--background-main-color);
+  color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -1556,8 +1569,20 @@ a {
   color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: start;
+  }
+}
+
 .footer__logo-studio {
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    text-align: start;
+  }
 }
 
 .footer__adr {
@@ -1575,7 +1600,7 @@ a {
 }
 
 .footer__link {
-  display: inline-block;
+  display: block;
   padding-bottom: 0;
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1596,41 +1621,44 @@ a {
   color: #ffffff;
 }
 
-.footer__thumb-first {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.footer__box {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 60px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .footer__thumb-first {
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 60px;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__thumb-first {
-    display: inline-block;
-    margin-right: 165px;
-  }
-}
-
-.footer__thumb-second {
-  display: inline-block;
 }
 
 @media screen and (max-width: 767px) {
   .footer__thumb-second {
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .footer__thumb-second {
-    display: inline-block;
-    margin-bottom: 102px;
   }
 }
 
@@ -1650,11 +1678,12 @@ a {
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 20px;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .footer__form-legend {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1663,6 +1692,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -1810,13 +1840,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-@media screen and (min-width: 480px) {
-  .filter {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 40px;
+@media screen and (max-width: 480px) {
+  .filter .filter .filter__item:nth-last-child(-n + 2) {
+    margin-top: 15px;
   }
 }
 
@@ -1837,23 +1868,19 @@ a {
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
-}
-
-@media screen and (max-width: 767px) {
-  .filter .filter__item:nth-last-child(-n + 2) {
-    margin-top: 15px;
-  }
+  margin-bottom: 15px;
 }
 
 /*портфолио-галерея*/
-.portfolio {
-  margin-right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: -15px;
+@media screen and (min-width: 768px) {
+  .portfolio {
+    margin: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .portfolio__thumb {
@@ -1875,8 +1902,8 @@ a {
   letter-spacing: 0.03em;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1893,12 +1920,15 @@ a {
           transform: translateY(-100%);
 }
 
-.portfolio__item {
-  margin: 15px;
+@media screen and (max-width: 767px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .portfolio__item {
+    margin: 15px;
     width: calc((100% - 60px) / 2);
   }
 }
@@ -1919,6 +1949,19 @@ a {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+
 .portfolio__link:hover,
 .portfolio__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1926,10 +1969,10 @@ a {
 }
 
 .portfolio__holder {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  padding: 20px 24px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #eeeeee;
@@ -1955,7 +1998,7 @@ a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
   letter-spacing: 0.03em;
   color: #757575;
 }

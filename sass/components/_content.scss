@@ -1,14 +1,21 @@
 /* секция-текст */
 
 .content {
-  margin: -15px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: $background-main-color;
+  @media screen and(min-width:768px) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .content__item {
-  margin: 15px;
+  @media screen and(max-width:76px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and(min-width:768px) {
+    margin: 15px;
     flex-basis: calc((100% / 2) - 30px);
   }
   @media screen and(min-width:1200px) {
@@ -16,9 +23,6 @@
   }
 }
 
-//.content__item:not(:last-child) {
-//margin-right: 30px;
-//}
 .content__thumb {
   display: flex;
   justify-content: center;

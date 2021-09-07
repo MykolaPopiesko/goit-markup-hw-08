@@ -1,4 +1,12 @@
 /* чем мы занимаемся-илюстрации*/
+
+.section--paddingtop {
+  padding-top: 0;
+  @media screen and(max-width:1199px) {
+    display: none;
+  }
+}
+
 .section__title--mobile {
   @media screen and (max-width: 1199px) {
     display: none;
@@ -6,9 +14,6 @@
 }
 .action {
   display: flex;
-  @media screen and(max-width:1199px) {
-    display: none;
-  }
 }
 
 .action__item {
@@ -29,7 +34,7 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
-  color: var(--background-main-color);
+  color: $background-main-color;
   background-color: rgba(47, 48, 58, 0.8);
   transform: translateY(-100%);
 }
